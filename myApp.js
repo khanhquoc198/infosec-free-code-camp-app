@@ -1,7 +1,8 @@
 const express = require('express');
-const helmet = require('helmet');
 const app = express();
 
+const helmet = require('helmet');
+const app2 = helmet();
 
 
 
@@ -54,5 +55,5 @@ app.get("/", function (request, response) {
 });
 let port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`server started on port ${PORT}`);
+  console.log(`server started on port ${port}`);
 });
